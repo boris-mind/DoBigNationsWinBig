@@ -34,29 +34,29 @@ This project contains several analysis based on real-world data, including:
 
 Dataset and Preparation
 
-Introduction : Do Big Nations Win Big ?
+**Introduction : Do Big Nations Win Big ?**
 
 ![Image cannot display](images/imageDBNWB1.png)
 
-Who dominates the Games ?
+**Who dominates the Games ?**
 
 ![Image cannot display](images/imageDBNWB2.png)
 
-GDP vs. Olympic Performance in 2016
+**GDP vs. Olympic Performance in 2016**
 
 ![Image cannot display](images/imageDBNWB3.png)
 
-FIFA World Cup Performance by Year
+**FIFA World Cup Performance by Year**
 
 ![Image cannot display](images/imageDBNWB4.png)
 
-Population vs. Olympic Performance in 2016
+**Population vs. Olympic Performance in 2016**
 
 ![Image cannot display](images/imageDBNWB5.png)
 
 ## How to View
 
-This portfolio is hosted on **GitHub Pages** and is accessible via the following URL:
+This portfolio is hosted on **Google Cloud Platform**, **Power BI** and on **GitHub Pages**, and is accessible via the following URL:
 
 [Visit my Data Portfolio 'Do Big Nations Win Big'](https://github.com/boris-mind/DoBigNationsWinBig)
 
