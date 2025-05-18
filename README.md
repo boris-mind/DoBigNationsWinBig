@@ -41,6 +41,7 @@ Dataset and Preparation
 **Who dominates the Games ?**
 
 ![Image cannot display](images/imageDBNWB2.png)
+![Image cannot display](images/imageDBNWB2.2.png)
 
 **GDP vs. Olympic Performance in 2016**
 
