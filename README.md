@@ -30,7 +30,9 @@ This project contains several analysis based on real-world data, including:
 3. **FIFA World Cup Analysis** - A study of the relationship between GDP and success in the FIFA World Cup.
 4. **Correlation between Population and OG Performance** - Insights into countries' population and athletic achievements.
 
-## Project Overview
+## Project Details
+
+Dataset and Preparation
 
 Introduction : Do Big Nations Win Big ?
 
