@@ -36,24 +36,28 @@ Dataset and Preparation
 
 **Introduction : Do Big Nations Win Big ?**
 
-![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/imageDBNWB1.png)
+![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB1.png)
 
 **Who dominates the Games ?**
 
-![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/imageDBNWB2.png)
-![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/imageDBNWB2.2.png)
+![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB2.png)
+![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB2.2.png)
 
 **GDP vs. Olympic Performance in 2016**
 
-![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/imageDBNWB3.png)
+![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB3.png)
 
 **FIFA World Cup Performance by Year**
 
-![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/imageDBNWB4.png)
+![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB4.png)
 
 **Population vs. Olympic Performance in 2016**
 
-![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/imageDBNWB5.png)
+![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB5.png)
+
+**Conclusion**
+
+![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB6.png)
 
 ## How to View
 
