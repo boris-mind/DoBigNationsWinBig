@@ -34,7 +34,15 @@ If you prefer to watch a 2 minutes video instead of below, please click to this 
 
 ## Project Details
 
-Dataset and Preparation
+**Data Sources**
+
+The datasets used in this project are from Kaggle 
+- https://www.kaggle.com/datasets/piterfm/olympic-games-medals-19862018
+- https://www.kaggle.com/datasets/piterfm/fifa-football-world-cup
+- https://www.kaggle.com/datasets/tunguz/country-regional-and-world-gdp
+- https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset
+
+**Preparation**
 
 **Introduction : Do Big Nations Win Big ?**
 
