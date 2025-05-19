@@ -34,40 +34,42 @@ If you prefer to watch a 2 minutes video instead of below, please click to this 
 
 ## Project Details
 
-**Data Sources**
+**Data Sources and Google Cloud Platform Storage**
 
-The datasets used in this project are from Kaggle 
+The datasets used in this project are sourced from Kaggle:
 - https://www.kaggle.com/datasets/piterfm/olympic-games-medals-19862018
 - https://www.kaggle.com/datasets/piterfm/fifa-football-world-cup
 - https://www.kaggle.com/datasets/tunguz/country-regional-and-world-gdp
 - https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset
 
-**Preparation**
+Once the datasets were downloaded, they were uploaded to **Google Cloud Platform (GCP)**. I created a **bucket** in **Google Cloud Storage** to securely store the raw data, making it easily accessible for further processing.
+
+Using **BigQuery**, I performed **SQL queries** on the data stored in the Cloud Storage bucket. This enabled me to process large datasets, transform them into structured tables, and optimize them for analysis. The processed tables were then made available for use in **Power BI**, where they were used for visualization and reporting.
 
 **Introduction : Do Big Nations Win Big ?**
 
-![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB1.png)
+![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB1.png)
 
 **Who dominates the Games ?**
 
-![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB2.png)
-![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB2.2.png)
+![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB2.png)
+![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB2.2.png)
 
 **GDP vs. Olympic Performance in 2016**
 
-![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB3.png)
+![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB3.png)
 
 **FIFA World Cup Performance by Year**
 
-![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB4.png)
+![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB4.png)
 
 **Population vs. Olympic Performance in 2016**
 
-![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB5.png)
+![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB5.png)
 
 **Conclusion**
 
-![Image cannot display](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB6.png)
+![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB6.png)
 
 ## How to View
 
