@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/ba6835e5-6baa-409a-997e-313b21e0dfb6)# DoBigNationsWinBig
+# DoBigNationsWinBig
 
 Welcome to my data portfolio **Do Big Nations Win Big**! This repository showcases my data analysis, visualizations, and projects that demonstrate my skills in working with data and deriving insights from various datasets.
 
