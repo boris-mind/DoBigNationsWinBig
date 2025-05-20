@@ -55,7 +55,7 @@ Using **BigQuery**, I performed **SQL queries** on the data stored in the Cloud 
 
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB1.png)
 
-### Who dominates the Games ?
+### The Olympic Games : Who dominates the Games ?
 
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB2.png)
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB2.2.png)
