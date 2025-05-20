@@ -42,18 +42,18 @@ The datasets used in this project are sourced from Kaggle:
 - https://www.kaggle.com/datasets/samithsachidanandan/gdp-by-country-1960-2023
 - https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset
 
-**Google Cloud Platform Storage**
+### Google Cloud Platform Storage
 
 Once the datasets were downloaded, they were uploaded to **Google Cloud Platform (GCP)**. I created a **bucket** in **Google Cloud Storage** to securely store the raw data, making it easily accessible for further processing.
 
 Using **BigQuery**, I performed **SQL queries** on the data stored in the Cloud Storage bucket. This enabled me to process large datasets, transform them into structured tables, and optimize them for analysis. The processed tables were then made available for use in **Power BI**, where they were used for visualization and reporting.
 
 
-**Introduction : Do Big Nations Win Big ?**
+### Introduction : Do Big Nations Win Big ?
 
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB1.png)
 
-**Who dominates the Games ?**
+### Who dominates the Games ?
 
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB2.png)
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB2.2.png)
@@ -73,7 +73,7 @@ Features and Techniques Used:
               "TotalMedals", COUNT(medals_df[medal_type])
           )*
 
-**GDP vs. Olympic Performance in 2016**
+### GDP vs. Olympic Performance in 2016
 
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB3.png)
 
@@ -88,7 +88,7 @@ FROM `DoBigNationsWinBig.gdp_1960-2016`
 WHERE Year = 2016;
 ```
 
-**FIFA World Cup Performance by Year**
+### FIFA World Cup Performance by Year
 
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB4.png)
 
@@ -125,7 +125,7 @@ FROM cleaned_world_cup
 ORDER BY Year, Role;
 ```
 
-**Population vs. Olympic Performance in 2016**
+### Population vs. Olympic Performance in 2016
 
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB5.png)
 
@@ -145,7 +145,7 @@ ORDER BY
     `2015 Population` DESC;
 ```
 
-**Conclusion**
+### Conclusion
 
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB6.png)
 
