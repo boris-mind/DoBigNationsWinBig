@@ -59,9 +59,9 @@ Using **BigQuery**, I performed **SQL queries** on the data stored in the Cloud 
 
 Features and Techniques Used:
 
-**- Power BI > Power Query: Power BI > Power Query:** Extracted the last 4 characters to obtain the Olympic year. For example, "tokyo-2020" becomes "2020".
-**- Power BI > Power BI Desktop:** Created two bookmarks, "World View" and "Ranking View", and assigned buttons to each bookmark for interactive filter buttons.
-**- Power BI > DAX:** Created a new table to aggregate the number of medals by country using DAX:
+- **Power BI > Power Query: Power BI > Power Query:** Extracted the last 4 characters to obtain the Olympic year. For example, "tokyo-2020" becomes "2020".
+- **Power BI > Power BI Desktop:** Created two bookmarks, "World View" and "Ranking View", and assigned buttons to each bookmark for interactive filter buttons.
+- **Power BI > DAX:** Created a new table to aggregate the number of medals by country using DAX:
 
   *          DAX
           Copier
@@ -78,7 +78,7 @@ Features and Techniques Used:
 
 Features and Techniques Used:
 
-**- Google Cloud Platform > Big Query:** Create a GDP table for the year 2016 only
+- **Google Cloud Platform > Big Query:** Create a GDP table for the year 2016 only
 
 ```SQL
 CREATE TABLE `DoBigNationsWinBig.gdp_2016_only` AS
@@ -87,8 +87,8 @@ FROM `DoBigNationsWinBig.gdp_1960-2016`
 WHERE Year = 2016;
 ```
 
-**- Power BI > Query :** Use first row as headers, delete columns, replace points with commas, replace Country Name, change the year format to fixed decimal number etc.
-**- Power BI > Desktop :** Create a measure that counts the total number of medals for the year 2016 using DAX.
+- **Power BI > Query :** Use first row as headers, delete columns, replace points with commas, replace Country Name, change the year format to fixed decimal number etc.
+- **Power BI > Desktop :** Create a measure that counts the total number of medals for the year 2016 using DAX.
 
  *          DAX
           Copier
@@ -104,7 +104,7 @@ WHERE Year = 2016;
 
 Features and Techniques Used:
 
-**- Google Cloud Platform > Big Query:** Correction des noms de pays "West Germany" by "Germany"
+- **Google Cloud Platform > Big Query:** Correction des noms de pays "West Germany" by "Germany"
 
 ```SQL
   WITH cleaned_world_cup AS (
@@ -141,7 +141,7 @@ ORDER BY Year, Role;
 
 Features and Techniques Used:
 
-**- Google Cloud Platform > Big Query:** Create a table keeping only the year 2015
+- **Google Cloud Platform > Big Query:** Create a table keeping only the year 2015
 
 ```SQL
 CREATE TABLE `DoBigNationsWinBig.world_population_2015` AS
