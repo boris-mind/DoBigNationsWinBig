@@ -1,4 +1,4 @@
-# DoBigNationsWinBig
+![image](https://github.com/user-attachments/assets/ba6835e5-6baa-409a-997e-313b21e0dfb6)# DoBigNationsWinBig
 
 Welcome to my data portfolio **Do Big Nations Win Big**! This repository showcases my data analysis, visualizations, and projects that demonstrate my skills in working with data and deriving insights from various datasets.
 
@@ -45,8 +45,11 @@ The datasets used in this project are sourced from **Kaggle**:
 
 Once the datasets were downloaded, they were uploaded to **Google Cloud Platform (GCP)**. I created a **bucket** in **Google Cloud Storage** to securely store the raw data, making it easily accessible for further processing.
 
+![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB0.png)
+
 Using **BigQuery**, I performed **SQL queries** on the data stored in the Cloud Storage bucket. This enabled me to process large datasets, transform them into structured tables, and optimize them for analysis. The processed tables were then made available for use in **Power BI**, where they were used for visualization and reporting.
 
+![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB0.2.png)
 
 ### Introduction : Do Big Nations Win Big ?
 
@@ -104,7 +107,7 @@ WHERE Year = 2016;
 
 Features and Techniques Used:
 
-- **Google Cloud Platform > Big Query:** Correction des noms de pays "West Germany" by "Germany"
+- **Google Cloud Platform > Big Query:** Correction of country names: 'West Germany' replaced by 'Germany'
 
 ```SQL
   WITH cleaned_world_cup AS (
