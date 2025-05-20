@@ -96,7 +96,7 @@ WHERE Year = 2016;
           TotalMedals_2016 = 
           CALCULATE(
               COUNT('olympic_medals_1896-2022'[medal_type]),
-    'olympic_medals_1896-2022'[slug_game] = "rio-2016"
+        'olympics_medals_1896-2022'[slug_game] = "rio-2016"
           )*
 
 ### FIFA World Cup Performance by Year
