@@ -85,7 +85,8 @@ Features and Techniques Used:
 CREATE TABLE `DoBigNationsWinBig.gdp_2016_only` AS
 SELECT *
 FROM `DoBigNationsWinBig.gdp_1960-2016`
-WHERE Year = 2016;```
+WHERE Year = 2016;
+```
 
 **FIFA World Cup Performance by Year**
 
