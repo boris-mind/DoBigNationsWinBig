@@ -29,9 +29,9 @@ This project contains several analysis based on real-world data, including:
 3. **FIFA World Cup Analysis** - An exploration of the relationship between GDP and success in the FIFA World Cup.
 4. **Correlation between Population and OG Performance** - Insights into countries' population and athletic achievements.
 
-If you prefer to watch a 2 minutes video instead of below, please click to this link to watch my presentation video.
+If you prefer to watch a 6 minutes video instead of below, please click to this link to watch my presentation video.
 
-<iframe width="560" height="315" src="https://www.loom.com/share/fccf8fdfb234412483ebb64b7320896e?sid=f74423d8-aefa-42ec-bab9-229edab9c181" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Watch my Loom video](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWBvideo.png)](https://www.loom.com/share/fccf8fdfb234412483ebb64b7320896e?sid=4448521a-3c16-4312-bdc6-d23d31215c7a)
 
 ## Project Details
 
