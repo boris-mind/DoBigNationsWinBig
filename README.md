@@ -88,6 +88,17 @@ FROM `DoBigNationsWinBig.gdp_1960-2016`
 WHERE Year = 2016;
 ```
 
+- Power BI > Query : Use first row as headers, delete columns, replace points with commas, replace Country Name, change the year format to fixed decimal number etc.
+- Power BI > Desktop : Create a measure that counts the total number of medals for the year 2016 using DAX.
+
+ *          DAX
+          Copier
+          TotalMedals_2016 = 
+          CALCULATE(
+              COUNT('olympic_medals_1896-2022'[medal_type]),
+    'olympic_medals_1896-2022'[slug_game] = "rio-2016"
+          )*
+
 ### FIFA World Cup Performance by Year
 
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB4.png)
@@ -113,7 +124,7 @@ Features and Techniques Used:
 )
 ```
          
-Dénormalisation des rôles : Les données sur le champion et le finaliste étaient dans une seule ligne (avec les colonnes "Champion" et "Runner-Up" côte à côte), le code ci-dessous a permis de créer deux lignes pour chaque année — une ligne pour le champion et une autre pour le finaliste. 
+Denormalization of Roles: The data for the champion and the runner-up were in a single row (with the "Champion" and "Runner-Up" columns side by side). The code below was used to create two rows for each year — one for the champion and another for the runner-up.
 
 ```SELECT Year, Champion AS Country, 'Champion' AS Role
 FROM cleaned_world_cup
