@@ -81,11 +81,11 @@ Features and Techniques Used:
 
 - Google Cloud Platform > Big Query: Create a GDP table for the year 2016 only
 
-'''SQL
+```SQL
 CREATE TABLE `DoBigNationsWinBig.gdp_2016_only` AS
 SELECT *
 FROM `DoBigNationsWinBig.gdp_1960-2016`
-WHERE Year = 2016;
+WHERE Year = 2016;```
 
 **FIFA World Cup Performance by Year**
 
@@ -109,18 +109,18 @@ Features and Techniques Used:
       ELSE `Runner-Up`
     END AS Runner_Up
   FROM `endless-gasket-*********.DoBigNationsWinBig.world_cup`
-)
+)```
          
 Dénormalisation des rôles : Les données sur le champion et le finaliste étaient dans une seule ligne (avec les colonnes "Champion" et "Runner-Up" côte à côte), le code ci-dessous a permis de créer deux lignes pour chaque année — une ligne pour le champion et une autre pour le finaliste. 
 
-SELECT Year, Champion AS Country, 'Champion' AS Role
+```SELECT Year, Champion AS Country, 'Champion' AS Role
 FROM cleaned_world_cup
 
 UNION ALL
 
 SELECT Year, Runner_Up AS Country, 'Runner-Up' AS Role
 FROM cleaned_world_cup
-ORDER BY Year, Role;
+ORDER BY Year, Role;```
 
 **Population vs. Olympic Performance in 2016**
 
@@ -130,7 +130,7 @@ Features and Techniques Used:
 
 - Google Cloud Platform > Big Query: Create a table 
 
-'''SQL
+```SQL
 CREATE TABLE `DoBigNationsWinBig.world_population_2015` AS
 SELECT 
     Country,
@@ -139,7 +139,7 @@ SELECT
 FROM 
     `DoBigNationsWinBig.world_population`
 ORDER BY 
-    `2015 Population` DESC;
+    `2015 Population` DESC;```
 
 **Conclusion**
 
