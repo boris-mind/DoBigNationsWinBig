@@ -172,7 +172,7 @@ This portfolio is hosted on **Google Cloud Platform**, **Power BI** and on **Git
 
 If you have any questions or would like to discuss any of the projects, please reach out to me via:
 
-- **Email**: your.email@example.com
+- **Email**: boris.kang.ly@gmail.com
 - **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/)
 - **GitHub**: [Your GitHub Profile](https://github.com/boris-mind)
 
