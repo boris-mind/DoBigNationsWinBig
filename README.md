@@ -34,7 +34,7 @@ If you prefer to watch a 2 minutes video instead of below, please click to this 
 
 ## Project Details
 
-**Data Sources**
+### Data Sources
 
 The datasets used in this project are sourced from Kaggle:
 - https://www.kaggle.com/datasets/piterfm/olympic-games-medals-19862018
@@ -110,7 +110,8 @@ Features and Techniques Used:
       ELSE `Runner-Up`
     END AS Runner_Up
   FROM `endless-gasket-*********.DoBigNationsWinBig.world_cup`
-)```
+)
+```
          
 Dénormalisation des rôles : Les données sur le champion et le finaliste étaient dans une seule ligne (avec les colonnes "Champion" et "Runner-Up" côte à côte), le code ci-dessous a permis de créer deux lignes pour chaque année — une ligne pour le champion et une autre pour le finaliste. 
 
@@ -121,7 +122,8 @@ UNION ALL
 
 SELECT Year, Runner_Up AS Country, 'Runner-Up' AS Role
 FROM cleaned_world_cup
-ORDER BY Year, Role;```
+ORDER BY Year, Role;
+```
 
 **Population vs. Olympic Performance in 2016**
 
@@ -140,7 +142,8 @@ SELECT
 FROM 
     `DoBigNationsWinBig.world_population`
 ORDER BY 
-    `2015 Population` DESC;```
+    `2015 Population` DESC;
+```
 
 **Conclusion**
 
