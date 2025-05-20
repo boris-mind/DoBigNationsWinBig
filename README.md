@@ -61,9 +61,9 @@ Using **BigQuery**, I performed **SQL queries** on the data stored in the Cloud 
 Features and Techniques Used:
 - Google Cloud Platform > Big Query:
 
-Correction des noms de pays "West Germany" by "Germany"
+--Correction des noms de pays "West Germany" by "Germany"
   
- CASE 
+CASE 
   WHEN Champion = 'West Germany' THEN 'Germany'
   ELSE Champion
 END AS Champion,
@@ -73,9 +73,9 @@ CASE
   ELSE `Runner-Up`
 END AS Runner_Up
 
-Dénormalisation des rôles : Les données sur le champion et le finaliste étaient dans une seule ligne (avec les colonnes "Champion" et "Runner-Up" côte à côte), le code ci-dessous a permis de créer deux lignes pour chaque année — une ligne pour le champion et une autre pour le finaliste. 
 
--- Dénormalisation des données
+--Dénormalisation des rôles : Les données sur le champion et le finaliste étaient dans une seule ligne (avec les colonnes "Champion" et "Runner-Up" côte à côte), le code ci-dessous a permis de créer deux lignes pour chaque année — une ligne pour le champion et une autre pour le finaliste. 
+
 SELECT Year, Champion AS Country, 'Champion' AS Role
 FROM cleaned_world_cup
 
