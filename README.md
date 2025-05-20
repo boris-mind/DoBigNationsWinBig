@@ -3,16 +3,16 @@
 Welcome to my data portfolio **Do Big Nations Win Big**! This repository showcases my data analysis, visualizations, and projects that demonstrate my skills in working with data and deriving insights from various datasets.
 
 ## Table of Contents
-- [About This Portfolio](#about-this-portfolio)
+- [About This Project](#about-this-project)
 - [Technologies Used](#technologies-used)
 - [Project Overview](#project-overview)
 - [Project Details](#project-details)
 - [How to View](#how-to-view)
 - [Contact Information](#contact-information)
 
-## About This Portfolio
+## About This Project
 
-This portfolio is a collection of my work on data analysis and visualizations. It highlights the methodologies I use, the tools I am proficient in, and the insights I've gathered from different datasets. The projects you’ll find here are all hosted on **Google Cloud Platform** and on **GitHub Pages** for easy viewing and sharing.
+This project is an overview of my work on data analysis and visualizations. It highlights the methodologies I use, the tools I am proficient in, and the insights I've gathered from different datasets. The projects you’ll find here are all hosted on **Google Cloud Platform** and on **GitHub Pages** for easy viewing and sharing.
 
 ## Technologies Used
 
@@ -20,14 +20,13 @@ This portfolio is a collection of my work on data analysis and visualizations. I
 - **SQL**
 - **Google Cloud Platform** for hosting
 - **GitHub Pages** for hosting
-- **HTML/CSS** for styling the webpage
 
 ## Project Overview
 
 This project contains several analysis based on real-world data, including:
 1. **Olympic Performance Analysis** - A deep dive into the Olympic Games history.
-2. **Relationship between economic and OG Performance** - how economic factors such as GDP influence the performance of countries in the Olympic Games.
-3. **FIFA World Cup Analysis** - A study of the relationship between GDP and success in the FIFA World Cup.
+2. **Relationship between economic and OG Performance** - How economic factors such as GDP influence the performance of countries in the Olympic Games.
+3. **FIFA World Cup Analysis** - An exploration of the relationship between GDP and success in the FIFA World Cup.
 4. **Correlation between Population and OG Performance** - Insights into countries' population and athletic achievements.
 
 If you prefer to watch a 2 minutes video instead of below, please click to this link to watch my presentation video.
@@ -36,7 +35,7 @@ If you prefer to watch a 2 minutes video instead of below, please click to this 
 
 ### Data Sources
 
-The datasets used in this project are sourced from Kaggle:
+The datasets used in this project are sourced from **Kaggle**:
 - https://www.kaggle.com/datasets/piterfm/olympic-games-medals-19862018
 - https://www.kaggle.com/datasets/piterfm/fifa-football-world-cup
 - https://www.kaggle.com/datasets/samithsachidanandan/gdp-by-country-1960-2023
@@ -60,9 +59,9 @@ Using **BigQuery**, I performed **SQL queries** on the data stored in the Cloud 
 
 Features and Techniques Used:
 
-- Power BI > Power Query: Power BI > Power Query: Extracted the last 4 characters to obtain the Olympic year. For example, "tokyo-2020" becomes "2020".
-- Power BI > Power BI Desktop: Created two bookmarks, "World View" and "Ranking View", and assigned buttons to each bookmark for interactive filter buttons.
-- Power BI > DAX: Created a new table to aggregate the number of medals by country using DAX:
+**- Power BI > Power Query: Power BI > Power Query:** Extracted the last 4 characters to obtain the Olympic year. For example, "tokyo-2020" becomes "2020".
+**- Power BI > Power BI Desktop:** Created two bookmarks, "World View" and "Ranking View", and assigned buttons to each bookmark for interactive filter buttons.
+**- Power BI > DAX:** Created a new table to aggregate the number of medals by country using DAX:
 
   *          DAX
           Copier
@@ -79,7 +78,7 @@ Features and Techniques Used:
 
 Features and Techniques Used:
 
-- Google Cloud Platform > Big Query: Create a GDP table for the year 2016 only
+**- Google Cloud Platform > Big Query:** Create a GDP table for the year 2016 only
 
 ```SQL
 CREATE TABLE `DoBigNationsWinBig.gdp_2016_only` AS
@@ -88,8 +87,8 @@ FROM `DoBigNationsWinBig.gdp_1960-2016`
 WHERE Year = 2016;
 ```
 
-- Power BI > Query : Use first row as headers, delete columns, replace points with commas, replace Country Name, change the year format to fixed decimal number etc.
-- Power BI > Desktop : Create a measure that counts the total number of medals for the year 2016 using DAX.
+**- Power BI > Query :** Use first row as headers, delete columns, replace points with commas, replace Country Name, change the year format to fixed decimal number etc.
+**- Power BI > Desktop :** Create a measure that counts the total number of medals for the year 2016 using DAX.
 
  *          DAX
           Copier
@@ -105,7 +104,7 @@ WHERE Year = 2016;
 
 Features and Techniques Used:
 
-- Google Cloud Platform > Big Query: Correction des noms de pays "West Germany" by "Germany"
+**- Google Cloud Platform > Big Query:** Correction des noms de pays "West Germany" by "Germany"
 
 ```SQL
   WITH cleaned_world_cup AS (
@@ -124,7 +123,7 @@ Features and Techniques Used:
 )
 ```
          
-Denormalization of Roles: The data for the champion and the runner-up were in a single row (with the "Champion" and "Runner-Up" columns side by side). The code below was used to create two rows for each year — one for the champion and another for the runner-up.
+**Denormalization of Roles:** The data for the champion and the runner-up were in a single row (with the "Champion" and "Runner-Up" columns side by side). The code below was used to create two rows for each year — one for the champion and another for the runner-up.
 
 ```SELECT Year, Champion AS Country, 'Champion' AS Role
 FROM cleaned_world_cup
@@ -142,7 +141,7 @@ ORDER BY Year, Role;
 
 Features and Techniques Used:
 
-- Google Cloud Platform > Big Query: Create a table 
+**- Google Cloud Platform > Big Query:** Create a table keeping only the year 2015
 
 ```SQL
 CREATE TABLE `DoBigNationsWinBig.world_population_2015` AS
@@ -165,8 +164,6 @@ ORDER BY
 This portfolio is hosted on **Google Cloud Platform**, **Power BI** and on **GitHub Pages**, and is accessible via the following URL:
 
 [Visit my Data Portfolio 'Do Big Nations Win Big'](https://github.com/boris-mind/DoBigNationsWinBig)
-
-Feel free to browse through the different projects and visualizations.
 
 ## Contact Information
 
