@@ -48,6 +48,7 @@ Once the datasets were downloaded, they were uploaded to **Google Cloud Platform
 
 Using **BigQuery**, I performed **SQL queries** on the data stored in the Cloud Storage bucket. This enabled me to process large datasets, transform them into structured tables, and optimize them for analysis. The processed tables were then made available for use in **Power BI**, where they were used for visualization and reporting.
 
+
 **Introduction : Do Big Nations Win Big ?**
 
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB1.png)
@@ -57,7 +58,32 @@ Using **BigQuery**, I performed **SQL queries** on the data stored in the Cloud 
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB2.png)
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB2.2.png)
 
-<u>Features and Techniques Used:</u>
+Features and Techniques Used:
+- Google Cloud Platform > Big Query:
+
+Correction des noms de pays "West Germany" by "Germany"
+  
+ CASE 
+  WHEN Champion = 'West Germany' THEN 'Germany'
+  ELSE Champion
+END AS Champion,
+  
+CASE 
+  WHEN `Runner-Up` = 'West Germany' THEN 'Germany'
+  ELSE `Runner-Up`
+END AS Runner_Up
+
+Dénormalisation des rôles : Les données sur le champion et le finaliste étaient dans une seule ligne (avec les colonnes "Champion" et "Runner-Up" côte à côte), le code ci-dessous a permis de créer deux lignes pour chaque année — une ligne pour le champion et une autre pour le finaliste. 
+
+-- Dénormalisation des données
+SELECT Year, Champion AS Country, 'Champion' AS Role
+FROM cleaned_world_cup
+
+UNION ALL
+
+SELECT Year, Runner_Up AS Country, 'Runner-Up' AS Role
+FROM cleaned_world_cup
+
 - Power BI > Power Query: Power BI > Power Query: Extracted the last 4 characters to obtain the Olympic year. For example, "tokyo-2020" becomes "2020".
 - Power BI > Power BI Desktop: Created two bookmarks, "World View" and "Ranking View", and assigned buttons to each bookmark for interactive filter buttons.
 - Power BI > DAX: Created a new table to aggregate the number of medals by country using DAX:
