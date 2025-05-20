@@ -39,7 +39,7 @@ If you prefer to watch a 2 minutes video instead of below, please click to this 
 The datasets used in this project are sourced from Kaggle:
 - https://www.kaggle.com/datasets/piterfm/olympic-games-medals-19862018
 - https://www.kaggle.com/datasets/piterfm/fifa-football-world-cup
-- https://www.kaggle.com/datasets/tunguz/country-regional-and-world-gdp
+- https://www.kaggle.com/datasets/samithsachidanandan/gdp-by-country-1960-2023
 - https://www.kaggle.com/datasets/iamsouravbanerjee/world-population-dataset
 
 **Google Cloud Platform Storage**
@@ -52,10 +52,15 @@ Using **BigQuery**, I performed **SQL queries** on the data stored in the Cloud 
 
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB1.png)
 
-<u>Approach and Features Used:</u>
-- Power BI > Power Query : Extract the 4 last characters to obtain the years of Olympic Medals, for instance "tokyo-2020" becomes "2020"
-- Power BI > Power BI Desktop : Création de deux signets "World View" and "Ranking View" et affection d'un bouton à un signet pour obtenir des boutons filtres interactifs
-- Power BI > DAX : Création d'une nouvelle table qui agrège le nombre de médailles par pays en utilisant DAX :
+**Who dominates the Games ?**
+
+![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB2.png)
+![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB2.2.png)
+
+<u>Features and Techniques Used:</u>
+- Power BI > Power Query: Power BI > Power Query: Extracted the last 4 characters to obtain the Olympic year. For example, "tokyo-2020" becomes "2020".
+- Power BI > Power BI Desktop: Created two bookmarks, "World View" and "Ranking View", and assigned buttons to each bookmark for interactive filter buttons.
+- Power BI > DAX: Created a new table to aggregate the number of medals by country using DAX:
 
   *          DAX
           Copier
@@ -65,12 +70,6 @@ Using **BigQuery**, I performed **SQL queries** on the data stored in the Cloud 
               medals_df[country_name], 
               "TotalMedals", COUNT(medals_df[medal_type])
           )*
-
-
-**Who dominates the Games ?**
-
-![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB2.png)
-![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB2.2.png)
 
 **GDP vs. Olympic Performance in 2016**
 
