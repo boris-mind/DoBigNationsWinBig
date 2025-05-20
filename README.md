@@ -59,33 +59,6 @@ Using **BigQuery**, I performed **SQL queries** on the data stored in the Cloud 
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB2.2.png)
 
 Features and Techniques Used:
-- Google Cloud Platform > Big Query:
-
---Correction des noms de pays "West Germany" by "Germany"
-
-  *          SQL
-          CASE 
-  WHEN Champion = 'West Germany' THEN 'Germany'
-  ELSE Champion
-END AS Champion,
-  
-CASE 
-  WHEN `Runner-Up` = 'West Germany' THEN 'Germany'
-  ELSE `Runner-Up`
-END AS Runner_Up
-          *
-         
-
-
---Dénormalisation des rôles : Les données sur le champion et le finaliste étaient dans une seule ligne (avec les colonnes "Champion" et "Runner-Up" côte à côte), le code ci-dessous a permis de créer deux lignes pour chaque année — une ligne pour le champion et une autre pour le finaliste. 
-
-*SELECT Year, Champion AS Country, 'Champion' AS Role
-FROM cleaned_world_cup
-
-UNION ALL
-
-SELECT Year, Runner_Up AS Country, 'Runner-Up' AS Role
-FROM cleaned_world_cup*
 
 - Power BI > Power Query: Power BI > Power Query: Extracted the last 4 characters to obtain the Olympic year. For example, "tokyo-2020" becomes "2020".
 - Power BI > Power BI Desktop: Created two bookmarks, "World View" and "Ranking View", and assigned buttons to each bookmark for interactive filter buttons.
@@ -104,13 +77,69 @@ FROM cleaned_world_cup*
 
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB3.png)
 
+Features and Techniques Used:
+
+- Google Cloud Platform > Big Query: Create a GDP table for the year 2016 only
+
+'''SQL
+CREATE TABLE `DoBigNationsWinBig.gdp_2016_only` AS
+SELECT *
+FROM `DoBigNationsWinBig.gdp_1960-2016`
+WHERE Year = 2016;
+
 **FIFA World Cup Performance by Year**
 
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB4.png)
 
+Features and Techniques Used:
+
+- Google Cloud Platform > Big Query: Correction des noms de pays "West Germany" by "Germany"
+
+```SQL
+  WITH cleaned_world_cup AS (
+  SELECT 
+    Year,
+    CASE 
+      WHEN Champion = 'West Germany' THEN 'Germany'
+      ELSE Champion
+    END AS Champion,
+    
+    CASE 
+      WHEN `Runner-Up` = 'West Germany' THEN 'Germany'
+      ELSE `Runner-Up`
+    END AS Runner_Up
+  FROM `endless-gasket-*********.DoBigNationsWinBig.world_cup`
+)
+         
+Dénormalisation des rôles : Les données sur le champion et le finaliste étaient dans une seule ligne (avec les colonnes "Champion" et "Runner-Up" côte à côte), le code ci-dessous a permis de créer deux lignes pour chaque année — une ligne pour le champion et une autre pour le finaliste. 
+
+SELECT Year, Champion AS Country, 'Champion' AS Role
+FROM cleaned_world_cup
+
+UNION ALL
+
+SELECT Year, Runner_Up AS Country, 'Runner-Up' AS Role
+FROM cleaned_world_cup
+ORDER BY Year, Role;
+
 **Population vs. Olympic Performance in 2016**
 
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB5.png)
+
+Features and Techniques Used:
+
+- Google Cloud Platform > Big Query: Create a table 
+
+'''SQL
+CREATE TABLE `DoBigNationsWinBig.world_population_2015` AS
+SELECT 
+    Country,
+    `2015 Population`,
+    `Area km`
+FROM 
+    `DoBigNationsWinBig.world_population`
+ORDER BY 
+    `2015 Population` DESC;
 
 **Conclusion**
 
