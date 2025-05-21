@@ -62,8 +62,8 @@ Using **BigQuery**, I performed **SQL queries** on the data stored in the Cloud 
 
 Features and Techniques Used:
 
-- **Power BI > Power Query: Power BI > Power Query:** Extracted the last 4 characters to obtain the Olympic year. For example, "tokyo-2020" becomes "2020".
-- **Power BI > Power BI Desktop:** Created two bookmarks, "World View" and "Ranking View", and assigned buttons to each bookmark for interactive filter buttons.
+- **Power BI > Query:** Extracted the last 4 characters to obtain the Olympic year. For example, "tokyo-2020" becomes "2020".
+- **Power BI > Desktop:** Created two bookmarks, "World View" and "Ranking View", and assigned buttons to each bookmark for interactive filter buttons.
 - **Power BI > DAX:** Created a new table to aggregate the number of medals by country using DAX:
 
   *          DAX
