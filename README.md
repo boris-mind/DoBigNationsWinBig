@@ -162,18 +162,12 @@ ORDER BY
 
 ![Image loading error](https://github.com/boris-mind/DoBigNationsWinBig/blob/main/imageDBNWB6.png)
 
-## How to View
-
-This portfolio is hosted on **Google Cloud Platform**, **Power BI** and on **GitHub Pages**, and is accessible via the following URL:
-
-[Visit my Data Portfolio 'Do Big Nations Win Big'](https://github.com/boris-mind/DoBigNationsWinBig)
-
 ## Contact Information
 
 If you have any questions or would like to discuss any of the projects, please reach out to me via:
 
 - **Email**: boris.kang.ly@gmail.com
-- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/)
-- **GitHub**: [Your GitHub Profile](https://github.com/boris-mind)
+- **LinkedIn**: [My LinkedIn Profile](https://www.linkedin.com/in/)
+- **GitHub**: [My GitHub Profile](https://github.com/boris-mind)
 
 Thank you for visiting my portfolio!
