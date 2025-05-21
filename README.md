@@ -17,7 +17,7 @@ This project is an overview of my work on data analysis and visualizations. It h
 ## Technologies Used
 
 - **Power BI / DAX**
-- **SQL**
+- **Big Query / SQL**
 - **Google Cloud Platform** for hosting
 - **GitHub Pages** for hosting
 
