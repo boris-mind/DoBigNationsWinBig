@@ -7,7 +7,6 @@ Welcome to my data portfolio **Do Big Nations Win Big**! This repository showcas
 - [Technologies Used](#technologies-used)
 - [Project Overview](#project-overview)
 - [Project Details](#project-details)
-- [How to View](#how-to-view)
 - [Contact Information](#contact-information)
 
 ## About This Project
